@@ -1,38 +1,43 @@
-<h1 class="text-center mt-3">Commentaires</h1>
-<div class="container d-flex justify-content-center mt-3">
-  <div class="media text-muted pt-3 w-100">
-    <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
-    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-      <strong class="d-block text-gray-dark"><a href="#">User Name</a></strong>
-      Commentaire
-    </p>
-    <p class="text-muted align-self-center"><small>Date et heure</small></p>
-  </div>
-</div>
-<h1 class="text-center mt-3">Section Commentaires</h1>
+<!-- Comment index start -->
+<h1 class="text-center mt-3">Comments area</h1>
 <div class="container">
-  <div class="my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Commentaires</h6>
+  <div class="my-3 p-3 bg-light rounded box-shadow">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Comments</h6>
     <% 3.times do %>
       <div class="media text-muted pt-3 w-100">
         <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
         <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-          <strong class="d-block text-gray-dark"><a href="#">User Name</a></strong>
-          Commentaire
+          <strong class="d-block text-gray-dark"><a href="#">@user_name</a></strong>
+          Comment
         </p>
-        <p class="text-muted align-self-center"><small>Date et heure</small></p>
+        <p class="text-muted align-self-center"><small>Location</small></p>
       </div>
     <% end %>
     <small class="d-block text-right mt-3">
-      <a href="#">Tous les Commentaires</a>
+      <a href="#">All Comments</a>
     </small>
     <form class="form mt-3">
       <div class="form-group">
-        <textarea class="form-control" placeholder="Votre commentaire..."></textarea>
+        <textarea class="form-control" placeholder="Your comment..."></textarea>
       </div>
       <button type="submit" class="btn btn-primary btn-block">
-        Commenter
+        Comment
       </button>
     </form>
   </div>
 </div>
+<!-- Comment index end -->
+
+<!-- Comment card start -->
+<h1 class="text-center mt-3">Comments</h1>
+<div class="container d-flex justify-content-center mt-3">
+  <div class="media text-muted pt-3 w-100">
+    <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray"><a href="#">@user_name</a></strong>
+      Comment
+    </p>
+    <p class="text-muted align-self-center"><small>Location</small></p>
+  </div>
+</div>
+<!-- Comment card end -->

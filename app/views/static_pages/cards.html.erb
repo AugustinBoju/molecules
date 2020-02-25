@@ -1,68 +1,52 @@
-<h1 class="text-center">Carte index evenements</h1>
+<h1 class="text-center">Event's index</h1>
+
+<!-- Cards index -->
 <div class="container d-flex justify-content-center mt-3">
   <div class="card mb-4 box-shadow box-shadow-hover border-primary">
     <div class="card-header">
-      <p>"Titre"</p>
-      <div class="card-price">
-        Prix
-      </div>
-      <div class="card-duration">
-        Durée
-      </div>
+      <p>"Title"</p>
     </div>
     <div class="card-body">
       <p class="card-text">Description</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <%= link_to "Voir", "#", class:"btn btn-sm btn-outline-primary" %>
+          <%= link_to "See more", "#", class:"btn btn-sm btn-outline-primary" %>
         </div>
-        <small class="text-muted">Date J/M/A H:M</small>
       </div>
     </div>
   </div>
 </div>
-<h1 class="text-center mt-3">Carte participants evenements</h1>
-<div class="container d-flex justify-content-center mt-3">
-  <div class="media text-muted pt-3 w-50">
-    <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
-    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-      <strong class="d-block text-gray-dark"><a href="#">User Name</a></strong>
-      Description / city
-    </p>
-  </div>
-</div>
-<h1 class="text-center mt-3">Carte index villes</h1>
+<!-- end -->
+
+<h1 class="text-center mt-3">Cities index</h1>
+
+<!-- City card -->
 <div class="container d-flex justify-content-center mt-3">
   <div class="card w-50">
     <div class="card-body">
-      <h5 class="card-title">Nom de la ville</h5>
-      <p class="card-text">Il y a X événements prévus à "nom de la ville".</p>
-      <a href="#" class="btn btn-primary">Voir les événements</a>
+      <h5 class="card-title">City name</h5>
+      <p class="card-text">#number of events</p>
+      <a href="#" class="btn btn-outline-primary">See events</a>
     </div>
   </div>
 </div>
-<h1 class="text-center mt-3">Carte index events sour forme d'album masonry</h1>
+<!-- end -->
+
+<h1 class="text-center mt-3">Cards index</h1>
+
+<!-- Cards show -->
 <div class="album py-5">
   <div class="container">
     <div class="card-columns">
-      <% 10.times do %>
+      <% 6.times do %>
         <div class="card mb-4 box-shadow box-shadow-hover border-primary">
-          <div class="card-header">
-            <p>"Titre"</p>
-            <div class="card-price">
-              Prix
-            </div>
-            <div class="card-duration">
-              Durée
-            </div>
-          </div>
           <div class="card-body">
-            <p class="card-text"><%= "Description "*rand(1..10) %></p>
+            <p class="card-text"><%= "Title " %></p>
+            <p class="card-text"><%= "Description and more " %></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <%= link_to "Voir", "#", class:"btn btn-sm btn-outline-primary" %>
+                <%= link_to "See more", "#", class:"btn btn-sm btn-outline-primary" %>
               </div>
-              <small class="text-muted">Date J/M/A H:M</small>
             </div>
           </div>
         </div>
@@ -70,10 +54,13 @@
     </div>
   </div>
 </div>
-<h1 class="text-center mt-3">Participants</h1>
+<!-- end -->
+<h1 class="text-center mt-3">Event users</h1>
+
+<!-- Event user show -->
 <div class="container">
-  <div class="my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Participants</h6>
+  <div class="my-3 p-3 bg-shadow rounded box-shadow">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Users</h6>
     <div class="container d-flex justify-content-center mt-3">
       <div class="media text-muted pt-3 w-100">
         <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
@@ -102,7 +89,22 @@
       </div>
     </div>
     <small class="d-block text-right mt-3">
-      <a href="#">Tous les participants</a>
+      <a href="#">All users</a>
     </small>
   </div>
 </div>
+<!-- end -->
+
+<h1 class="text-center mt-3">Users cards</h1>
+
+<!-- User index -->
+<div class="container d-flex justify-content-center mt-3">
+  <div class="media text-muted pt-3 w-50">
+    <img src="https://via.placeholder.com/50" alt="" class="mr-2 rounded">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark"><a href="#">User Name</a></strong>
+      Description / city
+    </p>
+  </div>
+</div>
+<!-- end -->
